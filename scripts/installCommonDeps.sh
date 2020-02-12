@@ -106,7 +106,7 @@ install_libnice0114(){
     cd $LIB_DIR
     rm -f ./build/lib/libnice.*
     rm -rf libnice-0.1.*
-    wget -c http://nice.freedesktop.org/releases/libnice-0.1.14.tar.gz
+    wget -O libnice-0.1.14.tar.gz -c https://github.com/libnice/libnice/archive/0.1.14.tar.gz
     tar -zxvf libnice-0.1.14.tar.gz
     cd libnice-0.1.14
     #patch -p1 < $PATHNAME/patches/libnice-0114.patch
@@ -128,7 +128,7 @@ install_libnice014(){
     cd $LIB_DIR
     rm -f ./build/lib/libnice.*
     rm -rf libnice-0.1.*
-    wget -c http://nice.freedesktop.org/releases/libnice-0.1.4.tar.gz
+    wget -O libnice-0.1.4.tar.gz -c https://github.com/libnice/libnice/archive/0.1.4.tar.gz
     tar -zxvf libnice-0.1.4.tar.gz
     cd libnice-0.1.4
     patch -p1 < $PATHNAME/patches/libnice014-agentlock.patch
